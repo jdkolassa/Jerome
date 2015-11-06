@@ -24,6 +24,7 @@
 		max-width: 100%;
 		@extend %default-shadow; 
 	}
+	.metadata { font-size: $font-size-small; }
 }
 
 .post, .type-page {
@@ -38,8 +39,7 @@
 		.post-content {
 			@extend .clearfix; 
 			@extend .column;
-			width: $nine-columns;
-			@extend .push-three;
+			// width: $nine-columns;
 		}
 		.post-info {
 			@extend .column;
