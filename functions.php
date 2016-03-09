@@ -94,10 +94,10 @@ $custom_header_support = array(
 
 add_theme_support( 'custom-header', $custom_header_support );
 add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-background', array( 'default-color' => 'fffefe' ) );
 
-add_image_size( 'post-image', 535, 9999 ); 
+add_image_size( 'post-image', 535, 9999 );
 add_image_size( 'featured-image', 980, 200, true );
 add_image_size( 'excerpt-image', 724, 160, true );
 add_image_size( 'default-thumbnail', 535, 200, true );
@@ -124,6 +124,7 @@ function frank_widgets() {
 	register_sidebar(
 		array(
 			'name'      		=> 'Navigation',
+			'id'            => 'widget-navigation',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -134,6 +135,7 @@ function frank_widgets() {
 	register_sidebar(
 		array(
 			'name'      		=> 'Index Right Aside',
+			'id'            => 'widget-indexrightaside',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -144,6 +146,7 @@ function frank_widgets() {
 	register_sidebar(
 		array(
 			'name'      		=> 'Post Left Aside',
+			'id'            => 'widget-postleftaside',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -154,6 +157,7 @@ function frank_widgets() {
 	register_sidebar(
 		array(
 			'name'      		=> 'Post Right Aside',
+			'id'            => 'widget-postrightaside',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
